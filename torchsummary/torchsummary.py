@@ -25,7 +25,6 @@ def summary(model, input_size, batch_size=-1, device=torch.device('cuda:0'),
             dtypes=None):
     result, params = summary_string(
         model, input_size, batch_size, device, dtypes)
-    print(result)
     return result
 
 
